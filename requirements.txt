@@ -1,0 +1,8 @@
+pandas
+pyarrow
+matplotlib
+seaborn
+plotly
+kaleido
+fastapi
+uvicorn

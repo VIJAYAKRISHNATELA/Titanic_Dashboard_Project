@@ -1,0 +1,31 @@
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "titanic-dashboard-project"
+version = "1.0.0"
+description = "Titanic data analysis dashboard and FastAPI REST API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "pyarrow",
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    "kaleido",
+    "fastapi",
+    "uvicorn"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "httpx"
+]
+
+[tool.setuptools]
+packages = ["app"]
